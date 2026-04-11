@@ -4,7 +4,7 @@ from utils.func_os import *
 os = OS()
 os.boot()
 import re
- = re.compile("echo\s(.*)", re.DOTALL)
+p_echo = re.compile("echo\s(.*)", re.DOTALL)
 p_cls = re.compile("cls")
 while True:
   choice = input("cmd >>> ")
