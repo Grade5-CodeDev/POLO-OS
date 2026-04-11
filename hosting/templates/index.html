@@ -8,7 +8,18 @@
 </head>
 
 <body>
-    <h1>hello world!</h1>
+    <h1 class="heading">hello world!</h1>
+    <script>
+        const heading = document.querySelectorAll(".heading");
+        let color = 0;
+        setInterval(() => {
+            color += 1;
+            const hue = color % 360;
+            heading.forEach((element) => {
+                element.style.color = `hsl(${hue}, 100%, 35%)`;
+            });
+        }, 16);
+    </script>
 </body>
 
 </html>
