@@ -1,20 +1,14 @@
 import os as sysOS
-class OS:
-  def boot(self):
-    print("boot test")
-  def echo(self, text):
-    print(text)
-  def cls():
-    sysOS.system("cls")
-
+import time, random
+from utils.func_os import *
 os = OS()
 os.boot()
 import re
-p_echo = re.compile("echo\s(.*)", re.DOTALL)
-p_cls = re.compilr("cls")
+ = re.compile("echo\s(.*)", re.DOTALL)
+p_cls = re.compile("cls")
 while True:
   choice = input("cmd >>> ")
   if p_echo.match(choice):
     os.echo(p_echo.sub("\g<1>", choice))
-  elif p_cls.match():
+  elif p_cls.match(choice):
     os.cls()
