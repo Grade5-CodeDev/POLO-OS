@@ -1,0 +1,7 @@
+[os.userset]
+enable_minscript = false
+enable_IDE = false
+
+[os.vipSet]
+enable_minscript = true
+enable_IDE = true
