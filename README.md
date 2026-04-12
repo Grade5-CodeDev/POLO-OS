@@ -1,5 +1,5 @@
 # POLO-OS
-Polo OS is great OS.
+Polo OS is great OS. Made with danilab
 <details>
     <summary>POLO OS의 기능을 알아보세요</summary>
     <h2>OUTPUT</h2>
