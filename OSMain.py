@@ -2,8 +2,8 @@ import os as sysOS
 import time, random
 from utils import func_os
 import ModenFirstModules as mfm
-os = func_os.OS()
-os.boot()
+func_os.OS.boot()
+os = func_os.OS
 mfm.output.PrintConfig.slow_print()
 import re
 p_echo = re.compile(r"echo\s(.*)", re.DOTALL)
