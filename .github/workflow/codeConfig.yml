@@ -1,0 +1,9 @@
+# codeQL.yml
+---
+code:
+  name: "codeConfig.yml"
+  maked: "2026.4.12"
+  makeby:
+    colab_1: "Grade5-CodeDev"
+    colab_2: "dani-Devofficial"
+...
