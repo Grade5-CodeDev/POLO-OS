@@ -4,10 +4,8 @@ import time, random
 import os as sysOS
 p_echo = re.compile("echo\s(.*)", re.DOTALL)
 p_cls = re.compile("cls")
-# TODO: 파일 시스템 기능 제작
 class OS:
-  @staticmethod
-  def boot():
+  def boot(self):
     steps = {
       "커널 로딩": {"count": 15, "speed": (0.03, 0.06)},
       "드라이버 초기화": {"count": 20, "speed": (0.02, 0.05)},
@@ -17,16 +15,13 @@ class OS:
     }
 
     for step, config in steps.items():
-      for i in tqdm(range(config["count"]), desc=step, leave=False): # 오류는 있는데 실제 실행 시에는 오류가 안 나니 괜찮음
-        time.sleep(random.uniform(*config["speed"])) # 여기도 괜찮음
+      for i in tqdm(range(config["count"]), desc=step, leave=False):
+        time.sleep(random.uniform(*config["speed"]))
 
     print("부팅 완료!")
-  @staticmethod
-  def echo(text):
+  def echo(self, text):
     print(text)
-  @staticmethod
-  def cls():
+  def cls(self):
     sysOS.system("cls")
-  @staticmethod
-  def off():
+  def off(self):
     quit()
