@@ -33,5 +33,5 @@ class OS:
   #DONE: cal 메소드: 계산
   @staticmethod
   def cal(s):
-    eval(s)
+    print(eval(s))
   #NOTE-P4: 참고, exec은 안전상 안 만들기로 함
