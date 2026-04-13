@@ -18,3 +18,5 @@ while True:
     os.off()
   elif p_cal.match(choice):
     os.cal(p_cal.sub(r"\g<1>", choice))
+  elif choice == "cmd":
+    print("cmd")
