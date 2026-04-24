@@ -1,59 +1,58 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <style>
-        body{
-margin:0;
-height:100vh;
-}
+<meta charset="UTF-8">
+<title>Booting Progress</title>
+<style>
+    body {
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        color: #eee;
+        font-family: Arial, sans-serif;
+    }
 
-/* 태스크바 */
+    .boot-container {
+        text-align: center;
+    }
 
-#taskbar{
-position:fixed;
-bottom:0;
-left:0;
+    .progress-bar {
+        width: 300px;
+        height: 10px;
+        background-color: #333;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
 
-width:100%;
-height:50px;
+    .progress-fill {
+        height: 100%;
+        background-color: #2ecc71;
+        width: 0%;
+        animation: load 5s forwards; /* 5초 동안 로딩 */
+    }
 
-background:#2563eb; /* 파란색 */
-
-color:white;
-display:flex;
-align-items:center;
-padding-left:10px;
-font-family:sans-serif;
-}
-
-/* 파일 영역 */
-
-#desktop-files{
-padding:20px;
-margin-bottom:60px;
-}
-    </style>
+    @keyframes load {
+        0% { width: 0%; }
+        100% { width: 100%; }
+    }
+</style>
 </head>
-
 <body>
-    <h1 class="heading">hello world!</h1>
-    <div id="desktop-files">파일들 위치</div>
-    <div id="taskbar">태스크바</div>
+    <div class="boot-container">
+        <h2>✨POLO OS✨</h2>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
     <script>
-        const heading = document.querySelectorAll(".heading");
-        let color = 0;
-        setInterval(() => {
-            color += 1;
-            const hue = color % 360;
-            heading.forEach((element) => {
-                element.style.color = `hsl(${hue}, 100%, 35%)`;
-            });
-        }, 16);
+            //대충 5초 걸리고 바 끝나남. 그러니까 5초 뒤에 index.html로 리다이렉션
+        setTimeout(function() {
+            window.location.href = 'index.html';
+        }, 5000);
     </script>
 </body>
-
 </html>

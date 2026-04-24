@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        body{
+margin:0;
+height:100vh;
+}
+
+/* 태스크바 */
+
+#taskbar{
+position:fixed;
+bottom:0;
+left:0;
+
+width:100%;
+height:50px;
+
+background:#2563eb; /* 파란색 */
+
+color:white;
+display:flex;
+align-items:center;
+padding-left:10px;
+font-family:sans-serif;
+}
+
+/* 파일 영역 */
+
+#desktop-files{
+padding:20px;
+margin-bottom:60px;
+}
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">hello world!</h1>
+    <div id="desktop-files">파일들 위치</div>
+    <div id="taskbar">태스크바</div>
+    <script>
+        const heading = document.querySelectorAll(".heading");
+        let color = 0;
+        setInterval(() => {
+            color += 1;
+            const hue = color % 360;
+            heading.forEach((element) => {
+                element.style.color = `hsl(${hue}, 100%, 35%)`;
+            });
+        }, 16);
+    </script>
+</body>
+
+</html>
