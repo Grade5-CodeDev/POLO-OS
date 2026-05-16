@@ -1,5 +1,6 @@
 # POLO-OS
 Polo OS is great OS. Made with danilab
+(참고 : C 폴더는 windows의 C:/ 저장소같은거임.)
 <details>
     <summary>POLO OS의 기능을 알아보세요</summary>
     <h2>OUTPUT</h2>
