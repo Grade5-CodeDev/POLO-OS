@@ -24,3 +24,20 @@ Polo OS is great OS. Made with danilab
 12. 체크리스트</br>
 
 </details>
+
+<details>
+    <summary>기본 앱</summary>
+        1. 디데이</br>
+2. 타이머</br>
+3. 주사위 던지기</br>
+4. 랜덤 선택</br>
+5. 돌림판</br>
+6. 점수판</br>
+7. 메모지</br>
+8. 소음 측정기</br>
+9. 브라우저</br>
+10. QR 코드 생성기</br>
+11. 실시간 시계</br>
+12. 체크리스트</br>
+
+</details>
